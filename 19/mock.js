@@ -1,0 +1,1 @@
+export const POST_LIST = ["열심히 살자", "꾸준히 하자"];

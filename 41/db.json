@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "content": "피카츄",
+      "id": "Ij62vfYClGA"
+    },
+    {
+      "content": "이상해씨",
+      "id": "C8_QuZ22wlM"
+    },
+    {
+      "content": "리자몽",
+      "id": "fe3B64CY5EQ"
+    },
+    {
+      "content": "꼬부기",
+      "id": "cV1W5ff5Zno"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "김지상"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

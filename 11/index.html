@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="복잡한 JS 를 다뤄보자">
+  <title>카이젠 철학</title>
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header>
+    <h1>철학</h1>
+    <p>논리적 종속성을 유지하자</p>
+    <p>시간적 종속성을 추가하자</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>지난 이야기</h2>
+      <ul>
+        <li>지지난 회차 때 만들었던 JS 를 활용한 동적 UI 기능을 재현하는데 집중했다</li>
+        <li>storage key 를 상수화했다</li>
+        <li>컨벤션 문서를 개선했다</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>이번 이야기</h2>
+      <ul>
+        <li>삭제 기능 추가!!</li>
+        <li>동적 UI 적용을 이번 이야기 섹션이 아닌 자유 게시판 섹션으로 옮겼다</li>
+        <li>상태 데이터에 대한 편집을 함수를 통해서 간접적으로 수행하려고 노력했다(완벽하진 않았음)</li>
+        <li>단방향 데이터 흐름에 대한 통찰을 발견했다</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>다음 이야기</h2>
+      <ul>
+        <li>miniReact 에 다가가기 (구현 목표나 기획 문서화)</li>
+        <li>단방향 데이터 흐름의 중복 로직을 관문 함수로 대체해보기</li>
+        <li>집에서 나가기 전에 시작해보기</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>자유 게시판</h2>
+      <ul id="post-list"></ul>
+      <input id="post-input" type="text">
+      <button id="post-add-button">등록하기</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>2026.07.11 11일차</p>
+    <p>리그 도달 직전!!</p>
+    <p>단방향 데이터 흐름을 제압해보자</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

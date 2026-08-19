@@ -1,0 +1,15 @@
+:root {
+    --button-bg: #00c989;
+    --color-bg: #d6fcf2;
+    --color-text: #434343;
+}
+
+.button {
+    background: var(--button-bg);
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}

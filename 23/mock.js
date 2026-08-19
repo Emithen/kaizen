@@ -1,0 +1,1 @@
+export const POST_LIST = ["모노", "즈랑", "확정1타"];

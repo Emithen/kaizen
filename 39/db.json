@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "content": "피카츄",
+      "id": "Ij62vfYClGA"
+    },
+    {
+      "content": "파이리",
+      "id": "vxcYKNquuFU"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "김지상"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,41 @@
+# 크로스 OS(macOS ↔ Windows) 작업 규칙
+#
+# 이 파일이 core.autocrlf 설정을 이긴다. 두 기계의 git 설정이 서로 달라도
+# 저장소에 들어가는 형태는 여기서 정한 하나로 통일된다.
+
+# ─── 줄바꿈 ───────────────────────────────
+# 저장소 안에서도, 체크아웃한 워킹트리에서도 항상 LF.
+# 윈도우에서 CRLF로 받고 싶으면 eol=lf를 빼면 되지만,
+# 그러면 기계를 옮길 때마다 파일 전체가 수정된 것처럼 보일 수 있다.
+* text=auto eol=lf
+
+# 윈도우 배치 파일만 예외 — CRLF가 아니면 실행이 깨진다
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 셸 스크립트는 반드시 LF
+*.sh text eol=lf
+
+# ─── 바이너리 (줄바꿈 변환·diff 금지) ───────
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.pdf binary
+
+# ─── 락파일 ───────────────────────────────
+# 반드시 커밋한다(두 기계가 같은 버전을 설치하게 하는 유일한 장치).
+# 다만 diff는 볼 일이 없으므로 접어둔다.
+pnpm-lock.yaml -diff linguist-generated
+package-lock.json -diff linguist-generated
+
+# ─── 언어 통계 ────────────────────────────
+# GitHub 언어 막대가 회고·문서로 뒤덮이지 않게
+*.md linguist-documentation

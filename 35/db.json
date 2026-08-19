@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "content": "안녕하세요",
+      "id": "DcjcLFRtM-I"
+    },
+    {
+      "content": "피카츄",
+      "id": "Ij62vfYClGA"
+    },
+    {
+      "content": "asjfklsajfjlsda",
+      "id": "P-Ul6ZiWM14"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "김지상"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
