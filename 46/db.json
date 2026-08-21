@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "content": "파이리",
+      "id": "8YJRDbBYeBk"
+    },
+    {
+      "content": "꼬부기",
+      "id": "sdmWSkYWUTI"
+    },
+    {
+      "content": "버터플",
+      "id": "StGBKfbyrVE"
+    },
+    {
+      "content": "야도란",
+      "id": "hzCG3xYM4V0"
+    },
+    {
+      "content": "약어리",
+      "id": "EERNVIvehHo"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "김지상"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
