@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "content": "파이리",
+      "id": "8YJRDbBYeBk"
+    },
+    {
+      "content": "야도란",
+      "id": "rFXkMxi9WI8"
+    },
+    {
+      "content": "피카츄",
+      "id": "iBn_-B6eTaw"
+    },
+    {
+      "content": "이브이",
+      "id": "77Yo3d-aSTQ"
+    },
+    {
+      "content": "sdfsf",
+      "id": "ia58fX0YgTc"
+    },
+    {
+      "content": "hello",
+      "id": "US6rDLPNL90"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "김지상"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
