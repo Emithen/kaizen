@@ -49,7 +49,7 @@ mini React 를 만들고 React 로 넘어간 그 순서를 나머지 분야에�
 ## C. 컴포넌트 설계
 
 - [ ] **C1** `Board.tsx` 안의 `List`/`Item`/`Input` 분리 — 파일 분리 기준을 문장으로 정의
-- [ ] **C2** 폼 로직을 커스텀 훅으로 추출 (`useInput`) — 50일차 숙제의 직접적인 답
+- [x] **C2** 폼 로직을 커스텀 훅으로 추출 (`useBoardForm`) — 51일차
 - [ ] **C3** 합성 패턴 (children, compound component)
 - [ ] **C4** `memo`/`useMemo`/`useCallback` 을 실측한 뒤 적용 — Profiler 로 before/after
 
