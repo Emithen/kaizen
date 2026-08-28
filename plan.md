@@ -24,13 +24,18 @@ mini React 를 만들고 React 로 넘어간 그 순서를 나머지 분야에�
 ## A. 상태 · 데이터 흐름
 
 50일차 회고의 "상태 코드가 난잡해지면 어떻게 가독성을 보장할 것인가" 가 이 레인의 입구다.
+상태관리는 Context API 부터 손으로 겪은 뒤 라이브러리로 넘어간다.
 
 - [ ] **A1** `useReducer` 로 상태 전이 통합 — 액션을 판별 유니온으로 (`ApiFailure` 에서 연습한 도구)
 - [ ] **A2** 요청 경합 관측 — 느린 요청과 빠른 요청을 겹쳐 쏘고 최종 상태가 뒤집히는 것을 재현
 - [ ] **A3** stale response 무시 / `AbortController`
-- [ ] **A4** 서버 상태를 컴포넌트 밖으로 — Context 또는 외부 store 직접 구현
-- [ ] **A5** 캐시 직접 만들기 (key→data, staleTime, invalidate)
-- [ ] **A6** TanStack Query 도입 후 A5 와 대조 회고
+- [ ] **A4** Context API 로 서버 상태를 컴포넌트 밖으로 — Provider 분리, prop drilling 해소
+- [ ] **A5** Context 의 한계를 직접 겪기 — value 객체 참조가 바뀔 때의 리렌더 범위를 Profiler 로 계측
+- [ ] **A6** 외부 store 직접 구현 (`useSyncExternalStore`) — 선택적 구독으로 A5 의 문제 해결
+- [ ] **A7** Zustand 또는 Jotai 도입 후 A6 와 대조 회고
+- [ ] **A8** 캐시 직접 만들기 (key→data, staleTime, invalidate)
+- [ ] **A9** TanStack Query 도입 후 A8 과 대조 회고
+
 
 ## B. 타입 · 검증
 
@@ -80,7 +85,19 @@ backlog 의 a11y.
 - [ ] **G3** Testing Library 로 Board 동작 테스트
 - [ ] **G4** ESLint 최소 규칙
 - [ ] **G5** GitHub Actions CI / pre-commit hook
-- [ ] **G6** `.env` 로 `BASE_URL` 분리 → 정적 배포 (backlog 의 "배포")
+
+## H. 백엔드 · 배포
+
+지금은 `json-server` 로 흉내내고 있다. 최종적으로는 직접 만든 백엔드를 실제로 배포해서 붙인다.
+backlog 의 "배포" 가 여기 들어온다.
+
+- [ ] **H1** `json-server` 고도화 — 지연과 에러를 주입해 실험 환경을 만든다 (A2·A3 실험의 토대)
+- [ ] **H2** `.env` / `import.meta.env` 로 `BASE_URL` 분리 — 개발·운영 분기
+- [ ] **H3** 프론트 정적 배포 (Vercel 또는 GitHub Pages)
+- [ ] **H4** 백엔드 직접 작성 (Hono 또는 Express + SQLite) — 라우팅·상태코드·응답 스키마를 내가 정한다
+- [ ] **H5** 백엔드 배포 (Fly.io / Railway / Render) 후 프론트와 연결
+- [ ] **H6** CORS, 환경별 URL, 콜드 스타트 대응
+- [ ] **H7** 인증 도입 검토 — 세션 vs 토큰
 
 ---
 
